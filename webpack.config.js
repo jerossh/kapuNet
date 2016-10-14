@@ -4,6 +4,7 @@ const path = require('path');
 module.exports = function(webpackConfig, env) {
   webpackConfig.babel.plugins.push('transform-runtime');
 
+  // 引入 antd css
   webpackConfig.babel.plugins.push(['import', {
     libraryName: 'antd',
     style: 'css',
