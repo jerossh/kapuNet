@@ -3,15 +3,13 @@ import { connect } from 'dva';
 import { Link } from 'dva/router';
 import styles from './IndexPage.less';
 
-import Banner from '../components/Banner'
-import Menu from '../components/Menu'
+import Header from '../components/Header'
 
 function IndexPage() {
 
   return (
     <div>
-      <Menu />
-      <Banner />
+      <Header />
     </div>
   )
 

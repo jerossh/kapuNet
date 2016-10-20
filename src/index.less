@@ -3,4 +3,51 @@
   html, body, #root {
     height: 100%;
   }
+
+  .home {
+    height: 100vh;
+    background-image: url("./public/header.jpg");
+    #header .ant-menu-light{
+      background-color: transparent;
+      border-width: 0;
+    }
+    .ant-menu-horizontal > .ant-menu-item, .ant-menu-horizontal > .ant-menu-submenu{
+      color: #333;
+    }
+  }
+  #header {
+    padding: 0 4%;
+    .ant-menu-light {
+      line-height: 61px;
+    }
+  }
+  .forground{
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    .inner {
+      * {
+        margin-top: 30px;
+      }
+      text-align: center;
+      h1 {
+        font-size: 46px;
+        letter-spacing: 1px;
+      }
+      p {
+        font-size: 17px;
+      }
+      .call_button{
+        text-align: center;
+      }
+    }
+
+  }
+  #logo, #logo img {
+    height: 30px;
+    line-height: 40px;
+  }
+  #logo img {
+    margin-top: 15px;
+  }
 }

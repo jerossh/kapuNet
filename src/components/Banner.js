@@ -3,19 +3,25 @@ import { Row, Col, Button } from 'antd'
 
 const Banner = () => {
   const slogen = {
-    title: 'It All Starts with Your Stunning Website',
-    content: 'Wix unites beauty and advanced technology to create your stunning website. It’s easy and free.',
+    title: '现在就开始制作最好的网站',
+    content: '咖谱网络使用时下最流行、性能最好的的Nodejs ，使用性能先进的Reactjs，与谷歌Material Design进行构建.',
     Button_title: 'Start Now'
   }
 
   return (
-    <Row>
-      <Col span={12} offset={6}>
-        <h1>{slogen.title}</h1>
-        <p>{slogen.content}</p>
-        <Button>{slogen.Button_title}</Button>
-      </Col>
-    </Row>
+    <div className='forground'>
+      <Row>
+        <Col span={14} offset={5}>
+          <div className="inner">
+            <h1>{slogen.title}</h1>
+            <p>{slogen.content}</p>
+            <div className="call_button">
+              <Button>{slogen.Button_title}</Button>
+            </div>
+          </div>
+        </Col>
+      </Row>
+    </div>
   )
 }
 
