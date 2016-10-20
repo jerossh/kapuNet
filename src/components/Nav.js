@@ -27,7 +27,7 @@ export default class Nav extends Component {
           <div className="ant-col-xs-24 ant-col-sm-7 ant-col-md-6 ant-col-lg-4">
 
               <a id="logo" href="/">
-                <img src="..\src\public\logo.svg" />
+                <img src="..\src\public\images\logo.svg" />
               </a>
           </div>
         </t>

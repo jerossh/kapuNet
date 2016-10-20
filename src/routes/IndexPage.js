@@ -4,12 +4,14 @@ import { Link } from 'dva/router';
 import styles from './IndexPage.less';
 
 import Header from '../components/Header'
+import Content from '../components/index_content'
 
 function IndexPage() {
 
   return (
     <div>
       <Header />
+      <Content />
     </div>
   )
 

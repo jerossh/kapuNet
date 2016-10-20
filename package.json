@@ -7,8 +7,11 @@
     "antd": "^2.0.1",
     "babel-plugin-import": "^1.0.1",
     "dva": "^1.0.0",
+    "images": "^3.0.0",
+    "public": "^0.1.2",
     "react": "^15.1.0",
-    "react-dom": "^15.1.0"
+    "react-dom": "^15.1.0",
+    "src": "^1.1.2"
   },
   "devDependencies": {
     "atool-build": "^0.7.6",
