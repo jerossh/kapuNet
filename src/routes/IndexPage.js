@@ -11,7 +11,9 @@ function IndexPage() {
   return (
     <div>
       <Header />
-      <Content />
+      <div id="container">
+        <Content />
+      </div>
     </div>
   )
 

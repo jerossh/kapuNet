@@ -6,10 +6,14 @@
     height: 100%;
   }
 
+  .homewrap {
+    height: 200vh;
+  }
   .home {
     height: 100vh;
     background-image: url("./public/images/header.jpg");
     background-position: center;
+    box-shadow: 1px 1px 23px 0 rgba(0,0,0,.6);
     #header .ant-menu-light{
       background-color: transparent;
       border-width: 0;
@@ -64,6 +68,19 @@
   }
 
   // 首页内容开始
+  #container{
+    opacity: 0.1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    transition: opacity 0.4s;
+    height: 400vh;
+  }
+  .content .feature:first-child {
+    margin-bottom: 24vh;
+}
   .content1 {
     padding-top: 17vh;
   }
@@ -78,13 +95,16 @@
       height: 100%;
       max-width: 782px;
       max-height: 468px;
-      top: 53%;
       right: 0;
       -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
       transform: translateY(-50%);
       text-align: right;
   }
+  .outdoor-wrapper .topvh {
+    top: 20vh;
+  }
+
   .outdoor-wrapper .website {
     -webkit-transform: translate3d(0,10%,0);
     transform: translate3d(0,10%,0);
@@ -116,12 +136,74 @@
     border-color: rgba(194,199,203,.7);
 }
 .content h2 {
-    font-size: 44px;
+    font-size: 36px;
     font-size: 2.3vmax;
     line-height: 55px;
     line-height: 2.9vmax;
     font-weight: lighter;
     margin: 0 0 .7vh;
+}
+.content .text, .content button {
+    font-size: 14px;
+    line-height: 22px;
+}
+.content .text {
+    font-size: 14px;
+    margin: 2.4vh 0 2vh;
+    letter-spacing: .037vmax;
+}
+.content button {
+    font-size: 15px;
+    font-size: .8vmax;
+    line-height: 1.4vmax;
+    color: #329fea;
+    border: 0;
+    padding: 0;
+    letter-spacing: .043vmax;
+    transition: all .2s linear;
+}
+.content .text, .content button {
+    line-height: 26px;
+}
+.content button, .home button {
+    background: 0 0;
+    cursor: pointer;
+}
+.content button svg {
+    height: 9px;
+}
+.content button svg {
+    width: 9px;
+    height: 10px;
+    vertical-align: middle;
+    fill: #329fea;
+    margin-left: 0;
+    transition: all .1s ease-in-out;
+}
+.content button .sec-svg {
+    opacity: 0;
+}
+
+.content button:hover .sec-svg {
+    opacity: 1;
+}
+
+.outdoor-wrapper {
+    position: relative;
+}
+.gallery .big img:last-child, .gallery .small img:last-child, .outdoor-wrapper img, .wix-features-container img:not(.slideshow-bg) {
+    box-shadow: 0 0 52px -7px rgba(0,0,0,.3);
+}
+.home, .image-fix img, .row, header, section {
+    width: 100%;
+}
+
+@media (max-width: 1440px) {
+  .outdoor-wrapper .container {
+    width: 80%;
+    height: 80%;
+    right: 6%;
+}
 }
 
 }

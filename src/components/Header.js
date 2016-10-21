@@ -6,9 +6,11 @@ import Nav from '../components/Nav'
 
 const Header = () => {
   return (
-    <div className='home'>
-      <Nav />
-      <Banner />
+    <div className="homewrap">
+      <div className='home'>
+        <Nav />
+        <Banner />
+      </div>
     </div>
   )
 }
