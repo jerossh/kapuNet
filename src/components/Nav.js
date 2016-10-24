@@ -31,7 +31,7 @@ export default class Nav extends Component {
               </a>
           </div>
         </t>
-        <t key="nav" mode="horizontal" id="nav">
+        <t key="nav" mode="horizontal" id="nav" className="ant-col-xs-24 ant-col-sm-17 ant-col-md-12 ant-col-lg-16">
           <Menu onClick={this.handleClick}
                 selectedKeys={[this.state.current] /*为什么是数组*/}
                 mode="horizontal"
@@ -56,6 +56,13 @@ export default class Nav extends Component {
               联系我们
             </Menu.Item>
           </Menu>
+        </t>
+        <t>
+          <div className="ant-col-xs-24 ant-col-sm-7 ant-col-md-6 ant-col-lg-4 right">
+            <div className="international">
+              <Icon type="environment-o" /> English
+            </div>
+          </div>
         </t>
       </header>
     )

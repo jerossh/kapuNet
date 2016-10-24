@@ -21,6 +21,11 @@
     .right {
       float: right;
     }
+    .international{
+      line-height: 61px;
+      text-align: right;
+      color: #484848;
+    }
     .ant-menu-horizontal > .ant-menu-item, .ant-menu-horizontal > .ant-menu-submenu{
       color: #333;
     }
@@ -76,8 +81,15 @@
     width: 100%;
     z-index: -1;
     transition: opacity 0.4s;
-    height: 400vh;
+    // height: 400vh;
+    box-shadow: 2px 0px 4px #bbb;
   }
+  .ant-row {
+    padding: 16% 0 0;
+}
+  .ant-row:first-child {
+    padding: 0;
+}
   .content .feature:first-child {
     margin-bottom: 24vh;
 }
@@ -198,12 +210,109 @@
     width: 100%;
 }
 
+.wix-features-container {
+    position: relative;
+    display: inline-flex;
+}
+.wix-features-container .map {
+    -webkit-transform: translate3d(0,25%,0);
+    transform: translate3d(0,25%,0);
+    max-width: 150px;
+    width: 15.7%;
+}
+.features-left {
+    margin-left: 8.4vw;
+    width: 35.6vw;
+    margin-top: 3vh;
+}
+
+.gallery .slide-1, .gallery .slide-2, .gallery .slide-3 {
+    opacity: 0;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0s;
+    pointer-events: none;
+}
+.gallery .text-wrapper .show {
+    max-height: 800px;
+    opacity: 1;
+}
+
+.gallery .slide-1-nav {
+    left: 20px;
+}
+.gallery input {
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+.gallery .features-gallery, .gallery .text-wrapper {
+    position: relative;
+    width: 41.4vw;
+}
+
+.gallery .features-slide {
+    -webkit-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    visibility: hidden;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    max-height: 0;
+}
+.gallery .features-slide.showing {
+    visibility: visible;
+    max-height: inherit;
+}
+.gallery .features-gallery .small {
+    -webkit-transform: translate3d(-40%,-10%,0);
+    transform: translate3d(-40%,-10%,0);
+    max-width: 990px;
+    transition: margin-left .7s .1s ease-out;
+}
+
+
+
+// Footer
+footer {
+  text-align: center;
+  line-height: 3rem;
+  margin-top: 8%;
+}
+footer .footer_content{
+  border-top: 1px solid #eee;
+  padding: 6% 0 8%;
+  margin-top: 8%;
+}
+footer .footer_content h3 {
+  padding-bottom: 15px;
+  font-size: 24px;
+  font-weight: normal;
+}
+footer .copyright span{
+  color:#bbb;
+  padding: 10px 20px;
+}
+
+
 @media (max-width: 1440px) {
+  .wix-features-container .map {
+    width: 15%;
+}
   .outdoor-wrapper .container {
     width: 80%;
     height: 80%;
     right: 6%;
 }
+.wix-features-container .online {
+    width: 49%;
+}
+.wix-features-container .booking {
+    width: 48%;
 }
 
+
+}
 }

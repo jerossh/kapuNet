@@ -4,7 +4,8 @@ import { Link } from 'dva/router';
 import styles from './IndexPage.less';
 
 import Header from '../components/Header'
-import Content from '../components/index_content'
+import Content from '../components/Index_content'
+import Footer from '../components/Footer'
 
 function IndexPage() {
 
@@ -13,7 +14,9 @@ function IndexPage() {
       <Header />
       <div id="container">
         <Content />
+        <Footer />
       </div>
+
     </div>
   )
 
