@@ -27,7 +27,7 @@ export default class Nav extends Component {
           <div className="ant-col-xs-24 ant-col-sm-7 ant-col-md-6 ant-col-lg-4">
 
               <a id="logo" href="/">
-                <img src="..\src\public\images\logo.svg" />
+                <img src="..\src\public\images\logo2.png" />
               </a>
           </div>
         </t>
@@ -43,13 +43,13 @@ export default class Nav extends Component {
               特征
             </Menu.Item>
             <SubMenu title={<span><Icon type="setting" />案例浏览</span>}>
-              <MenuItemGroup title="Item 1">
-                <Menu.Item key="setting:1">Option 1</Menu.Item>
-                <Menu.Item key="setting:2">Option 2</Menu.Item>
+              <MenuItemGroup title="成熟型">
+                <Menu.Item key="setting:1">中誉会计</Menu.Item>
+                <Menu.Item key="setting:2">中拓网络</Menu.Item>
               </MenuItemGroup>
-              <MenuItemGroup title="Item 2">
-                <Menu.Item key="setting:3">Option 3</Menu.Item>
-                <Menu.Item key="setting:4">Option 4</Menu.Item>
+              <MenuItemGroup title="创业型">
+                <Menu.Item key="setting:3">一只猫舍</Menu.Item>
+                <Menu.Item key="setting:4">皇爵进出口</Menu.Item>
               </MenuItemGroup>
             </SubMenu>
             <Menu.Item key="contact">

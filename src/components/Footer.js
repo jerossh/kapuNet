@@ -7,9 +7,9 @@ const Footer = () => {
       <Row>
         <Col span={20} offset={2}>
           <div className="footer_content">
-            <h3>If you have any question</h3>
+            <h3>如果您有意愿或者有任何的疑问或建议</h3>
             <div className="feed">
-              <Button  type="primary" size="large">Send Feedback</Button>
+              <Button  type="primary" size="large">联系我们</Button>
             </div>
           </div>
           <div className='copyright'>

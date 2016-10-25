@@ -1,6 +1,6 @@
 var abs_content = document.getElementById('container');
 var home = document.getElementsByClassName('home')[0];
-var distance, opacity = 0;
+var distance;
 
 // function animation(opacity) {
 //
@@ -15,7 +15,7 @@ function getTheDis() {
   } else {
     scrollTop = document.documentElement.scrollTop;
   }
-  console.log(distance, scrollTop);
+  // console.log(distance, scrollTop);
 
   if (scrollTop >= distance) {
     abs_content.style.position = 'absolute';
@@ -24,7 +24,6 @@ function getTheDis() {
   } else {
     abs_content.style.position = 'fixed';
     abs_content.style.top = '0';
-    opacity = scrollTop/distance
     abs_content.style.opacity = scrollTop/distance;
   }
 
@@ -37,3 +36,7 @@ if (navigator.userAgent.indexOf('Trident') > 0) {
 } else {
   document.body.onscroll = getTheDis
 }
+
+
+//
+var toFeather = document.body.cli
