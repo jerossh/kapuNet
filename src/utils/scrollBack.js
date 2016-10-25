@@ -1,6 +1,6 @@
 var abs_content = document.getElementById('container');
 var home = document.getElementsByClassName('home')[0];
-var distance;
+var distance,count = 0;
 
 // function animation(opacity) {
 //
@@ -17,17 +17,32 @@ function getTheDis() {
   }
   // console.log(distance, scrollTop);
 
-  if (scrollTop >= distance) {
+  // 为了让 if 的内容只执行一次，假如 count计算
+  if (scrollTop >= distance && count === 0) {
     abs_content.style.position = 'absolute';
     abs_content.style.top = '100vh';
     abs_content.style.opacity = '1';
-  } else {
+    count++
+    console.log(count,'noe');
+  } else if(scrollTop < distance) {
+    if (count === 1) {
+      count--
+    }
     abs_content.style.position = 'fixed';
     abs_content.style.top = '0';
     abs_content.style.opacity = scrollTop/distance;
   }
-
 }
+
+// 函数节流
+// function throttle(method, context) {
+//   clearTimeout(method.tid)
+//   method.tid = setTimeout(function(){
+//     method.call(context)
+//   }, 100)
+// }
+
+// 页面载入需要首次运行
 getTheDis()
 // document.body.onmousewheel = getTheDis
 // 检测滚动事件比检测滚轮事件，整体 UI 过渡更流畅，也不用考虑拉滚动条的操作
@@ -39,4 +54,5 @@ if (navigator.userAgent.indexOf('Trident') > 0) {
 
 
 //
-var toFeather = document.body.cli
+var toFeather = document.body.clientHeight    // win下不准确，mac下是对的
+var toFeather = window.innerHeight    // 这个还是看win下的效果，需要 ie 9以上

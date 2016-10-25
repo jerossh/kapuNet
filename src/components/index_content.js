@@ -15,7 +15,7 @@ const Content = () => {
                   <p className="text">
                       遵循良好的设计风格，本着简介，内容优先的设计原则 <br />使用谷歌 material 设计指导。善用世界先进的前端自动<br />化技术，后端nodejs强劲加持；借助国内支付宝团队 <br />ant design 框架，利用先进的react技术，制造出令人<br />耳目一新的网站。
                   </p>
-                  <button className="get-started">马上了解
+                  <button className="get-started">了解更多
                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10.9 19"><path d="M1.4 19L0 17.6l8.1-8.1L0 1.4 1.4 0l9.5 9.5"></path></svg>
                       <svg className="sec-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10.9 19"><path d="M1.4 19L0 17.6l8.1-8.1L0 1.4 1.4 0l9.5 9.5"></path></svg>
                   </button>
@@ -26,7 +26,7 @@ const Content = () => {
                   <p className="text">
                       利用每个页面的关键词与描述, 以及页面内良好的链接、标 <br />题层级与内容词汇的选择，可让搜索引擎很好的理解页面<br />内容与意义。新闻与幻灯片中的图片也设置了信息系统， <br />让每一次更新，每一张图片都让你的网站更加健壮。
                   </p>
-                  <button className="get-started">Start Now
+                  <button className="get-started">了解更多
                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10.9 19"><path d="M1.4 19L0 17.6l8.1-8.1L0 1.4 1.4 0l9.5 9.5"></path></svg>
                       <svg className="sec-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10.9 19"><path d="M1.4 19L0 17.6l8.1-8.1L0 1.4 1.4 0l9.5 9.5"></path></svg>
                   </button>
@@ -69,7 +69,7 @@ const Content = () => {
                   <p className="text">
                       我们一直在为后台的易用性方面做努力，调研显示普通营销型<br />网站的功能需求最大的一块就是新闻系统，其次为产品展示系统<br />偶尔还需要修改联系信息、幻灯片等功能，对于其他功能的基本<br />上使用不到，我们的后台系统对这些基本功能进行了大量的优化，<br />简化了大量的操作，让日常维护更加简单，方便。
                   </p>
-                  <button className="get-started">Start Now
+                  <button className="get-started">了解更多
                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10.9 19"><path d="M1.4 19L0 17.6l8.1-8.1L0 1.4 1.4 0l9.5 9.5"></path></svg>
                       <svg className="sec-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10.9 19"><path d="M1.4 19L0 17.6l8.1-8.1L0 1.4 1.4 0l9.5 9.5"></path></svg>
                   </button>
@@ -84,9 +84,9 @@ const Content = () => {
               <hr className="divider" />
               <div className="fix-space-ie">
                   <div className="slide-1 show">
-                      <h2>响应式适配电脑端<br />平板电脑，大屏幕手机</h2>
+                      <h2>移动优先原则，适配电脑<br />平板等多端浏览器</h2>
                       <p className="text">
-                          网站针对电脑各个尺寸<br />have created a free website with Wix. Musicians, online store<br />owners, designers, dentists, dog walkers, brides, bloggers, event<br />planners, photographers, lawyers, movers and more choose our<br />easy website builder.
+                          网站针对电脑与平板的各个尺寸屏幕都进行了适配，可完美显示于<br />1024px ～ 1920px 像素，甚至在高分屏下也有着优秀的表现素质。<br />网站使用眼下流行的媒体查询技术，结合强大的js动画框架为网站<br />添加舒适流畅的显示效果。
                       </p>
                   </div>
                   <div className="slide-2">
