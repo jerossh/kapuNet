@@ -13,10 +13,13 @@ const Footer = () => {
             </div>
           </div>
           <div className='copyright'>
-            <span>KapuNet@2016</span>
-            <span>Made by Jon_s</span>
-            <span>Wechat</span>
-            <span>Contact</span>
+            <span>版权所有 KapuNet©️2016</span>
+            <span>Made by <a href='http://www.jon23.top/'>Jon_s</a></span>
+            <span> <a disabled href="http://www.KapuNet.com">微信</a></span>
+            <span><a href="mailto:jerosshen@gmail.com">邮件</a></span>
+            <span><a href="http://www.zhongyukuaiji.com">公司注册</a></span>
+            <span><a href="http://www.zhongyukuaiji.com">寝具购买</a></span>
+            <span><a href="http://www.zhongyukuaiji.com">猫猫照顾</a></span>
           </div>
         </Col>
       </Row>
