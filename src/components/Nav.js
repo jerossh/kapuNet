@@ -20,6 +20,11 @@ export default class Nav extends Component {
     })
   }
 
+  handleFeatureClick =() => {
+
+  }
+
+
   render() {
     return (
       <header id="header">

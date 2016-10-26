@@ -6,7 +6,7 @@ const Content = () => {
 
   return (
     <div className="content1 content">
-      <Row>
+      <Row className="ant-row-c">
         <Col span={12}>
           <div className="vw50 text-wrapper left">
               <div className="feature">
@@ -22,7 +22,7 @@ const Content = () => {
               </div>
               <div className="feature">
                   <hr className="divider" />
-                  <h2 className="fix-space-ie">高效而精准的搜索<br />引擎关键词优化</h2>
+                  <h2 className="fix-space-ie">高效而精准的搜索引擎<br />关键词优化</h2>
                   <p className="text">
                       利用每个页面的关键词与描述, 以及页面内良好的链接、标 <br />题层级与内容词汇的选择，可让搜索引擎很好的理解页面<br />内容与意义。新闻与幻灯片中的图片也设置了信息系统， <br />让每一次更新，每一张图片都让你的网站更加健壮。
                   </p>
@@ -45,7 +45,7 @@ const Content = () => {
         </div>
         </Col>
       </Row>
-      <Row>
+      <Row className="ant-row-c">
         <Col span={12}>
         <div className="vw50 wix-features-container">
                     <div className="map image-fix">
@@ -65,7 +65,7 @@ const Content = () => {
           <div className="vw50 text-wrapper features-left">
               <div className="">
                   <hr className="divider" />
-                  <h2 className="fix-space-ie">简单易用的后台系统<br />与网站分析系统</h2>
+                  <h2 className="fix-space-ie">简单易用的后台系统与网<br />站分析系统</h2>
                   <p className="text">
                       我们一直在为后台的易用性方面做努力，调研显示普通营销型<br />网站的功能需求最大的一块就是新闻系统，其次为产品展示系统<br />偶尔还需要修改联系信息、幻灯片等功能，对于其他功能的基本<br />上使用不到，我们的后台系统对这些基本功能进行了大量的优化，<br />简化了大量的操作，让日常维护更加简单，方便。
                   </p>
@@ -77,7 +77,7 @@ const Content = () => {
           </div>
         </Col>
       </Row>
-      <Row className="gallery">
+      <Row className="gallery ant-row-c">
 
         <Col span={12}>
           <div className="vw50 text-wrapper left">
@@ -86,7 +86,7 @@ const Content = () => {
                   <div className="slide-1 show">
                       <h2>移动优先原则，适配电脑<br />平板等多端浏览器</h2>
                       <p className="text">
-                          网站针对电脑与平板的各个尺寸屏幕都进行了适配，可完美显示于<br />1024px ～ 1920px 像素，甚至在高分屏下也有着优秀的表现素质。<br />网站使用眼下流行的媒体查询技术，结合强大的js动画框架为网站<br />添加舒适流畅的显示效果。
+                          网站针对电脑与平板的各个尺寸屏幕都进行了适配，可<br />完美显示于1024px ～ 1920px 像素，甚至在高分屏下<br />也有着优秀的表现素质网站使用眼下流行的媒体查询技<br />术，结合强大的js动画框架为网站添加舒适流畅的显示效<br />果。
                       </p>
                   </div>
                   <div className="slide-2">
@@ -103,7 +103,7 @@ const Content = () => {
                       </ol>
                   </div>
               </div>
-              <button className="get-started">Start Now
+              <button className="get-started">了解更多
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10.9 19"><path d="M1.4 19L0 17.6l8.1-8.1L0 1.4 1.4 0l9.5 9.5"></path></svg>
                   <svg className="sec-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10.9 19"><path d="M1.4 19L0 17.6l8.1-8.1L0 1.4 1.4 0l9.5 9.5"></path></svg>
               </button>

@@ -5,6 +5,7 @@ import styles from './IndexPage.less';
 
 import Header from '../components/Header'
 import Content from '../components/Index_content'
+import Form from '../components/Form'
 import Footer from '../components/Footer'
 
 function IndexPage() {
@@ -14,7 +15,10 @@ function IndexPage() {
       <Header />
       <div id="container">
         <Content />
-        <Footer />
+        <div id='formfooter'>
+          <Form />
+          <Footer />
+        </div>
       </div>
 
     </div>

@@ -53,6 +53,55 @@ if (navigator.userAgent.indexOf('Trident') > 0) {
 }
 
 
-//
-var toFeather = document.body.clientHeight    // win下不准确，mac下是对的
-var toFeather = window.innerHeight    // 这个还是看win下的效果，需要 ie 9以上
+//animation
+
+function animation(method, context, destination) {
+  var initTop = window.scrollY
+  clearInterval(method.tid)
+  method.tid = setInterval(function(){
+    // if(window.scrollY > toFeature){
+    //   clearInterval(method.tid)
+    // }
+    method.call(context, method.tid, destination, initTop)
+  }, 16)
+}
+
+function goto(){
+  var tid = arguments[0]
+  var destination =arguments[1]
+  var initTop = arguments[2]
+  console.log(destination, window.scrollY);
+  if(window.scrollY >= destination){
+    clearInterval(tid)
+  }
+  aim = (destination - initTop)/36
+  window.scrollTo(0, window.scrollY+aim)
+}
+
+var DomFeature = document.querySelectorAll('.ant-menu-item')[1]
+var toFeature = document.documentElement.clientHeight   // 都支持
+
+// var toFeather = document.body.clientHeight    // ie下是整个文档的高度，mac下是对的
+// var toFeather = window.innerHeight    // 这个还是看win下的效果，需要 ie 9以上
+DomFeature.onclick = function(){
+  // window.requestAnimationFrame(goto)
+  animation(goto, null, toFeature)
+}
+
+
+// contacts
+
+var contacts = document.querySelectorAll('.contact')[0]
+var form = document.querySelector('#form')
+var content1 = document.querySelector('.content1')
+var footer = document.querySelector('#footer')
+contacts.onclick = function(){
+ //
+  content1.style.marginBottom = '98vh'
+  content1.style.boxShadow = '0 -2px 8px 1px #e2e2e2'
+  footer.style.opacity = '0.4'
+  var toForm = window.scrollY + window.innerHeight*0.58
+  animation(goto, null, toForm)
+  form.style.visibility = 'visible'
+  document.body.style.overflow = 'hidden'
+}
