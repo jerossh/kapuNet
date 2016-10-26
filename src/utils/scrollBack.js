@@ -23,7 +23,7 @@ function getTheDis() {
     abs_content.style.top = '100vh';
     abs_content.style.opacity = '1';
     count++
-    console.log(count,'noe');
+    // console.log(count,'noe');
   } else if(scrollTop < distance) {
     if (count === 1) {
       count--
@@ -53,8 +53,7 @@ if (navigator.userAgent.indexOf('Trident') > 0) {
 }
 
 
-//animation
-
+// animation
 function animation(method, context, destination) {
   var initTop = window.scrollY
   clearInterval(method.tid)
@@ -66,15 +65,23 @@ function animation(method, context, destination) {
   }, 16)
 }
 
+// scroll function
 function goto(){
   var tid = arguments[0]
   var destination =arguments[1]
   var initTop = arguments[2]
-  console.log(destination, window.scrollY);
-  if(window.scrollY >= destination){
-    clearInterval(tid)
+  // console.log(destination, window.scrollY);
+  var aim = (destination - initTop)/36
+  if (aim > 0) {
+    if(window.scrollY >= destination){
+      clearInterval(tid)
+    }
+  } else {
+    if(window.scrollY <= destination){
+      clearInterval(tid)
+    }
   }
-  aim = (destination - initTop)/36
+
   window.scrollTo(0, window.scrollY+aim)
 }
 
@@ -90,7 +97,6 @@ DomFeature.onclick = function(){
 
 
 // contacts
-
 var contacts = document.querySelectorAll('.contact')[0]
 var form = document.querySelector('#form')
 var content1 = document.querySelector('.content1')
@@ -98,10 +104,24 @@ var footer = document.querySelector('#footer')
 contacts.onclick = function(){
  //
   content1.style.marginBottom = '98vh'
-  content1.style.boxShadow = '0 -2px 8px 1px #e2e2e2'
-  footer.style.opacity = '0.4'
+  content1.style.boxShadow = '0 -2px 8px 1px #aaa'
+  footer.style.opacity = '0.1'
   var toForm = window.scrollY + window.innerHeight*0.58
   animation(goto, null, toForm)
   form.style.visibility = 'visible'
   document.body.style.overflow = 'hidden'
+}
+
+
+// close form
+var closeBtn = document.querySelector('#closeForm')
+
+closeBtn.onclick = function(){
+  document.body.style.overflow = 'visible'
+  form.style.visibility = 'hidden'
+  var cForm = window.scrollY - window.innerHeight*0.58
+  animation(goto, null, cForm)
+  content1.style.marginBottom = '40vh'
+  content1.style.boxShadow = ''
+  footer.style.opacity = '1'
 }
