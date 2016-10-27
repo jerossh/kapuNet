@@ -99,9 +99,9 @@ contacts.onclick = function(){
  //
   content1.style.marginBottom = '98vh'
   content1.style.boxShadow = '0 -2px 8px 1px #e2e2e2'
-  footer.style.opacity = '0.4'
-  var toForm = window.scrollY + window.innerHeight*0.58
+  // footer.style.opacity = '0.4'
+  var toForm = window.scrollY + window.innerHeight*0.57
   animation(goto, null, toForm)
   form.style.visibility = 'visible'
-  document.body.style.overflow = 'hidden'
+  // document.body.style.overflow = 'hidden'
 }
