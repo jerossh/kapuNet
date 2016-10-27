@@ -123,7 +123,7 @@ const Content = () => {
                   </div>
                   <div className="big image-fix">
                       <img alt="" src="src/public/images/hp-gallery-A-big.svg" data-ie=""/>
-                      <img src="src/public/images/A-big.jpg" alt="" data-ie="//static.parastorage.com/services/wix-homepage-davinci/1.143.0/images/features-gallery/en/ie_website1.png"/>
+                      <img src="src/public/images/A-big.jpg" alt="" />
                   </div>
               </div>
               <div className="slide-2-img features-slide">
@@ -134,7 +134,7 @@ const Content = () => {
                   </div>
                   <div className="big image-fix">
                       <img alt="" src="src/public/images/hp-gallery-B-big.svg" data-ie=""/>
-                      <img src="src/public/images/B-big.jpg" alt="" data-ie="//static.parastorage.com/services/wix-homepage-davinci/1.143.0/images/features-gallery/en/ie_website2.png"/>
+                      <img src="src/public/images/B-big.jpg" alt="" />
                   </div>
               </div>
               <div className="slide-3-img features-slide">
@@ -144,7 +144,7 @@ const Content = () => {
                   </div>
                   <div className="big image-fix">
                       <img alt="" src="src/public/images/hp-gallery-C-big.svg" data-ie=""/>
-                      <img src="src/public/images/C-big.jpg" alt="" data-ie="//static.parastorage.com/services/wix-homepage-davinci/1.143.0/images/features-gallery/en/ie_website3.png"/>
+                      <img src="src/public/images/C-big.jpg" alt="" />
                   </div>
               </div>
           </div>

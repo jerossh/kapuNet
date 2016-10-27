@@ -1,13 +1,16 @@
 import React from 'react';
-import { Button, Form, Input } from 'antd';
+import { Button, Form, Input, Col  } from 'antd';
+
+
 const createForm = Form.create;
 const FormItem = Form.Item;
+const InputGroup = Input.Group;
 
 function noop() {
   return false;
 }
 
-let BasicDemo = React.createClass({
+let ContactForm = React.createClass({
   handleReset(e) {
     e.preventDefault();
     this.props.form.resetFields();
@@ -87,7 +90,7 @@ let BasicDemo = React.createClass({
               { validator: this.userExists },
             ],
           })(
-            <Input placeholder="Realtime validation, try to input Jason Wood" />
+            <Input placeholder=" 姓名或者昵称，不要超过五个字，请使用中文" />
           )}
         </FormItem>
 
@@ -109,62 +112,38 @@ let BasicDemo = React.createClass({
               trigger: ['onBlur', 'onChange'],
             }],
           })(
-            <Input type="email" placeholder="This control uses onBlur and onChange" />
+            <Input type="email" placeholder="留下邮箱，我们可以以邮件的形式回复您的疑问，更加方便无扰" />
           )}
         </FormItem>
 
         <FormItem
           {...formItemLayout}
-          label="手机"
-          hasFeedback
+          label="电话"
         >
-          {getFieldDecorator('passwd', {
-            rules: [
-              { required: true, whitespace: true, message: 'Please enter your password' },
-              { validator: this.checkPass },
-            ],
-          })(
-            <Input type="password" autoComplete="off"
-              onContextMenu={noop} onPaste={noop} onCopy={noop} onCut={noop}
-            />
+        {getFieldDecorator('tel', {
+          rules: [
+            { required: true, message: 'We need your phonenumber?' },
+          ],
+        })(
+          <InputGroup>
+            <Col span="4">
+              <Input id="tel1" defaultValue="086" />
+            </Col>
+            <Col span="2">
+              <p className="ant-form-split">--</p>
+            </Col>
+            <Col span="6">
+              <Input id="tel1" />
+            </Col>
+            <Col span="6">
+              <Input id="tel2" />
+            </Col>
+            <Col span="6">
+              <Input id="tel3" />
+            </Col>
+          </InputGroup>
           )}
         </FormItem>
-
-        {/* <FormItem
-          {...formItemLayout}
-          label="Confirm password"
-          hasFeedback
-        >
-          {getFieldDecorator('rePasswd', {
-            rules: [{
-              required: true,
-              whitespace: true,
-              message: 'Please confirm your password',
-            }, {
-              validator: this.checkPass2,
-            }],
-          })(
-            <Input type="password" autoComplete="off" placeholder="Both passwords that you enter must be consistent."
-              onContextMenu={noop} onPaste={noop} onCopy={noop} onCut={noop}
-            />
-          )}
-        </FormItem> */}
-
-        {/* <FormItem
-          {...formItemLayout}
-          label="ID Card"
-        >
-          <Input.Group className="ant-search-input">
-            {getFieldDecorator('id-number', {
-              rules: [{ required: true, message: 'ID number is required' }],
-            })(
-              <Input />
-            )}
-            <div className="ant-input-group-wrap">
-              <Button icon="scan" className="ant-search-btn" />
-            </div>
-          </Input.Group>
-        </FormItem> */}
 
         <FormItem
           {...formItemLayout}
@@ -172,23 +151,23 @@ let BasicDemo = React.createClass({
         >
           {getFieldDecorator('textarea', {
             rules: [
-              { required: true, message: 'Really not supposed to write something?' },
+              { required: false, message: 'Really not supposed to write something?' },
             ],
           })(
-            <Input type="textarea" placeholder="Please write something" id="textarea" name="textarea" />
+            <Input type="textarea" placeholder="有任何疑问或者建议？" id="textarea" name="textarea" />
           )}
         </FormItem>
 
         <FormItem wrapperCol={{ span: 12, offset: 7 }}>
           <Button type="primary" onClick={this.handleSubmit}>提交</Button>
           &nbsp;&nbsp;&nbsp;
-          <Button type="ghost" onClick={this.handleReset}>关闭</Button>
+          <Button type="ghost" id="closeForm">关闭</Button>
         </FormItem>
       </Form>
     );
   },
 });
 
-BasicDemo = createForm()(BasicDemo);
+ContactForm = createForm()(ContactForm);
 
-export default BasicDemo
+export default ContactForm
