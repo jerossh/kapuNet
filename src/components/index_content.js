@@ -36,10 +36,10 @@ const Content = () => {
         <Col span={12}>
         <div className="vw50 outdoor-wrapper">
             <div className="container outdoor topvh">
-                <img alt="wix map feature" src="src/public/images/grid_website.jpg" className="grid" />
+                <img alt="wix map feature" src="http://ofwgmeiuh.bkt.clouddn.com/grid_website.jpg" className="grid" />
                 <div className="website image-fix">
-                    <img alt="" src="src/public/images/hp-travel.svg" />
-                    <img alt="wix map feature" src="src/public/images/travel-website.png" />
+                    <img alt="" src="http://ofwgmeiuh.bkt.clouddn.com/hp-travel.svg" />
+                    <img alt="wix map feature" src="http://ofwgmeiuh.bkt.clouddn.com/travel-website.png" />
                 </div>
             </div>
         </div>
@@ -49,15 +49,15 @@ const Content = () => {
         <Col span={12}>
         <div className="vw50 wix-features-container">
                     <div className="map image-fix">
-                        <img alt="wix map feature" src="src/public/images/feature-map.jpg" />
+                        <img alt="wix map feature" src="http://ofwgmeiuh.bkt.clouddn.com/feature-map.jpg" />
                     </div>
                     <div className="online image-fix">
-                        <img alt="wix online store feature" src="src/public/images/hp-onlinestore.svg" />
-                        <img alt="wix online store feature" src="src/public/images/feature-online.jpg" />
+                        <img alt="wix online store feature" src="http://ofwgmeiuh.bkt.clouddn.com/hp-onlinestore.svg" />
+                        <img alt="wix online store feature" src="http://ofwgmeiuh.bkt.clouddn.com/feature-online.jpg" />
                     </div>
                     <div className="booking image-fix">
-                        <img alt="wix booking feature" src="src/public/images/hp-booking.svg" />
-                        <img alt="wix booking feature" src="src/public/images/feature-booking.jpg" />
+                        <img alt="wix booking feature" src="http://ofwgmeiuh.bkt.clouddn.com/hp-booking.svg" />
+                        <img alt="wix booking feature" src="http://ofwgmeiuh.bkt.clouddn.com/feature-booking.jpg" />
                     </div>
                 </div>
         </Col>
@@ -118,33 +118,33 @@ const Content = () => {
         <div className="vw50 features-gallery" data-last="slide-1-img">
               <div className="slide-1-img features-slide showing">
                   <div className="small image-fix">
-                      <img alt="" src="src/public/images/hp-gallery-A-small.svg" data-ie=""/>
-                      <img src="src/public/images/A-small.jpg" data-ie="" alt=""/>
+                      <img alt="" src="http://ofwgmeiuh.bkt.clouddn.com/hp-gallery-A-small.svg" data-ie=""/>
+                      <img src="http://ofwgmeiuh.bkt.clouddn.com/A-small.jpg" data-ie="" alt=""/>
                   </div>
                   <div className="big image-fix">
-                      <img alt="" src="src/public/images/hp-gallery-A-big.svg" data-ie=""/>
-                      <img src="src/public/images/A-big.jpg" alt="" />
+                      <img alt="" src="http://ofwgmeiuh.bkt.clouddn.com/hp-gallery-A-big.svg" data-ie=""/>
+                      <img src="http://ofwgmeiuh.bkt.clouddn.com/A-big.jpg" alt="" />
                   </div>
               </div>
               <div className="slide-2-img features-slide">
 
                   <div className="small image-fix">
-                      <img alt="" src="src/public/images/hp-gallery-B-small.svg" data-ie=""/>
-                      <img src="src/public/images/B-small.jpg" alt="" data-ie=""/>
+                      <img alt="" src="http://ofwgmeiuh.bkt.clouddn.com/hp-gallery-B-small.svg" data-ie=""/>
+                      <img src="http://ofwgmeiuh.bkt.clouddn.com/B-small.jpg" alt="" data-ie=""/>
                   </div>
                   <div className="big image-fix">
-                      <img alt="" src="src/public/images/hp-gallery-B-big.svg" data-ie=""/>
-                      <img src="src/public/images/B-big.jpg" alt="" />
+                      <img alt="" src="http://ofwgmeiuh.bkt.clouddn.com/hp-gallery-B-big.svg" data-ie=""/>
+                      <img src="http://ofwgmeiuh.bkt.clouddn.com/B-big.jpg" alt="" />
                   </div>
               </div>
               <div className="slide-3-img features-slide">
                   <div className="small image-fix">
-                      <img alt="" src="src/public/images/hp-gallery-C-small.svg" data-ie=""/>
-                      <img src="src/public/images/C-small.jpg" alt="" data-ie=""/>
+                      <img alt="" src="http://ofwgmeiuh.bkt.clouddn.com/hp-gallery-C-small.svg" data-ie=""/>
+                      <img src="http://ofwgmeiuh.bkt.clouddn.com/C-small.jpg" alt="" data-ie=""/>
                   </div>
                   <div className="big image-fix">
-                      <img alt="" src="src/public/images/hp-gallery-C-big.svg" data-ie=""/>
-                      <img src="src/public/images/C-big.jpg" alt="" />
+                      <img alt="" src="http://ofwgmeiuh.bkt.clouddn.com/hp-gallery-C-big.svg" data-ie=""/>
+                      <img src="http://ofwgmeiuh.bkt.clouddn.com/C-big.jpg" alt="" />
                   </div>
               </div>
           </div>

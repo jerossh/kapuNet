@@ -3,10 +3,10 @@ import { connect } from 'dva';
 import { Link } from 'dva/router';
 import styles from './IndexPage.less';
 
-import Header from '../components/Header'
-import Content from '../components/Index_content'
-import Form from '../components/Form'
-import Footer from '../components/Footer'
+import Header from './../components/Header'
+import Content from './../components/Index_content'
+import Form from './../components/Form'
+import Footer from './../components/Footer'
 
 function IndexPage() {
 

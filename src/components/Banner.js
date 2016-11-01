@@ -16,7 +16,7 @@ const Banner = () => {
             <h1>{slogen.title}</h1>
             <p>{slogen.content}</p>
             <div className="call_button">
-              <Button size="large">{slogen.Button_title}</Button>
+              <Button size="large"><a href="/about/index.html">{slogen.Button_title}</a></Button>
             </div>
           </div>
         </Col>

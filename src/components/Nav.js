@@ -57,7 +57,7 @@ export default class Nav extends Component {
                 <Menu.Item key="setting:4">皇爵进出口</Menu.Item>
               </MenuItemGroup>
             </SubMenu>
-            <Menu.Item key="contact">
+            <Menu.Item key="contact" className='contact'>
               联系我们
             </Menu.Item>
           </Menu>

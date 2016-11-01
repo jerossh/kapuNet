@@ -97,10 +97,21 @@ DomFeature.onclick = function(){
 
 
 // contacts
-var contacts = document.querySelectorAll('.contact')[0]
+var contacts1 = document.querySelectorAll('.contact')[0]
+var contacts = document.querySelectorAll('.contact')[1]
 var form = document.querySelector('#form')
 var content1 = document.querySelector('.content1')
 var footer = document.querySelector('#footer')
+
+contacts1.onclick = function() {
+  content1.style.marginBottom = '98vh'
+  content1.style.boxShadow = '0 -2px 8px 1px #aaa'
+  footer.style.opacity = '0.1'
+  var toForm = window.scrollY + window.innerHeight*3.58
+  animation(goto, null, toForm)
+  form.style.visibility = 'visible'
+  document.body.style.overflow = 'hidden'
+}
 contacts.onclick = function(){
  //
   content1.style.marginBottom = '98vh'

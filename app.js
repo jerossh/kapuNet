@@ -18,9 +18,16 @@ const options = {
 // app.set('view engine','jade');
 
 // 引入静态资源
-app.use(express.static('./src', options))
+app.use(express.static('./dist', options))
+app.use(express.static('./dist/about', options))
 
 app.get('/', function(req, res) {
-  res.sendFile(path.join(__dirname, './src/index.html'))
+  res.sendFile(path.join(__dirname, './dist/index.html'))
 })
-app.listen(3002)
+
+app.get('/about', function(req, res) {
+  res.sendFile(path.join(__dirname, './dist/about/index.html'))
+})
+app.listen(3002, function(){
+  console.log('运行啦');
+})

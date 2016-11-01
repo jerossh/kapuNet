@@ -1,5 +1,6 @@
 {
   "private": true,
+  "main": "app.js",
   "entry": {
     "index": "./src/index.js"
   },

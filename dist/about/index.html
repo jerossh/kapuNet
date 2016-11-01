@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>咖普网络</title>
+	<meta name="description" content="Card Expansion Effect with SVG clipPath" />
+	<meta name="keywords" content="clipPath, svg, effect, layout, expansion, images, grid, polygon" />
+	<meta name="author" content="Claudio Calautti for Codrops" />
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+	<link rel="stylesheet" type="text/css" href="css/card.css" />
+	<link rel="stylesheet" type="text/css" href="css/pattern.css" />
+	<!--[if IE]>
+	  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<script>
+	if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
+		var root = document.getElementsByTagName('html')[0];
+		root.setAttribute('class', 'ff');
+	};
+	</script>
+</head>
+
+<body class="demo-3">
+	<div class="container">
+		<header class="codrops-header">
+			<h1>咖普网络相关业务介绍  <span>新一代互联网解决方案提供商</span></h1>
+			<nav class="codrops-demos">
+				<a href="#UI">UI设计</a>
+				<a href="#wangzhan">网站建设</a>
+				<a href="#weixin">微信小程序</a>
+				<a href="#APP">APP制作</a>
+				<a href="#PPT">PTT制作</a>
+			</nav>
+		</header>
+		<div class="content">
+			<!-- trianglify pattern container -->
+			<div class="pattern pattern--hidden"></div>
+			<!-- cards -->
+			<div class="wrapper">
+				<div class="card" name="UI">
+					<div class="card__container card__container--closed">
+						<svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+							<defs>
+								<clipPath id="clipPath1">
+									<polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+								</clipPath>
+							</defs>
+							<image clip-path="url(#clipPath1)" width="1920" height="500" xlink:href="http://ofwgmeiuh.bkt.clouddn.com/a.jpg"></image>
+						</svg>
+						<div class="card__content">
+							<i class="card__btn-close fa fa-times"></i>
+							<div class="card__caption">
+								<h2 class="card__title">UI设计</h2>
+								<p class="card__subtitle">简洁，易用，关注交互逻辑</p>
+							</div>
+							<div class="card__copy">
+								<p>遵循简单易用原则，通过竞品、项目需求分析，用户研究，可用性评估来制作最合适的方案设计。</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card__container card__container--closed">
+						<svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+							<defs>
+								<clipPath id="clipPath2">
+									<polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+								</clipPath>
+							</defs>
+							<image clip-path="url(#clipPath2)" width="1920" height="500" xlink:href="http://ofwgmeiuh.bkt.clouddn.com/b.jpg"></image>
+						</svg>
+						<div class="card__content" name="wangzhan">
+							<i class="card__btn-close fa fa-times"></i>
+							<div class="card__caption">
+								<h2 class="card__title">网站建设</h2>
+								<p class="card__subtitle">以国际水准要求自己</p>
+							</div>
+							<div class="card__copy">
+								<p>使用先进的nodejs与reactjs编写网站前后端程序。一对一专业定制您的网站需求；网站采用贯彻极简美学，专注精华内容呈现，精致细节；网站后期维护模式及其友好，不需要学习即可上手。</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card" name='weixin'>
+					<div class="card__container card__container--closed">
+						<svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+							<defs>
+								<clipPath id="clipPath3">
+									<polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+								</clipPath>
+							</defs>
+							<image clip-path="url(#clipPath3)" width="1920" height="500" xlink:href="http://ofwgmeiuh.bkt.clouddn.com/c.jpg"></image>
+						</svg>
+						<div class="card__content">
+							<i class="card__btn-close fa fa-times"></i>
+							<div class="card__caption">
+								<h2 class="card__title">微信小程序</h2>
+								<p class="card__subtitle">这是一块前途光明的业务</p>
+							</div>
+							<div class="card__copy">
+								<p>我们也就发力于腾讯的主要平台，微信。微信第三方平台已经是创业热门，而微信的小程序发布于2016年9月21的新东西，微信小程序借助于强大的微信平台，虽然功能不及原生APP强大，但也能够取代一大部分简单需求的APP，卡普网络的微信小程序平台也在火热的开发中。</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card__container card__container--closed">
+						<svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+							<defs>
+								<clipPath id="clipPath4">
+									<polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+								</clipPath>
+							</defs>
+							<image clip-path="url(#clipPath4)" width="1920" height="500" xlink:href="http://ofwgmeiuh.bkt.clouddn.com/d.jpg"></image>
+						</svg>
+						<div class="card__content">
+							<i class="card__btn-close fa fa-times"></i>
+							<div class="card__caption">
+								<h2 class="card__title">APP开发</h2>
+								<p class="card__subtitle">追求多端体验的一致性</p>
+							</div>
+							<div class="card__copy">
+								<p>企业产品互联网化、渠道互联网化、营销互联网化、品牌互联网化的趋势正在推动企业级APP的发展。 企业级APP开发需要结合自身特点以及用户需求，与企业自身业务紧密结合，且与企业的传统业务形成互联网化的互补。</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card__container card__container--closed">
+						<svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+							<defs>
+								<clipPath id="clipPath5">
+									<polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+								</clipPath>
+							</defs>
+							<image clip-path="url(#clipPath5)" width="1920" height="500" xlink:href="http://ofwgmeiuh.bkt.clouddn.com/e.jpg"></image>
+						</svg>
+						<div class="card__content">
+							<i class="card__btn-close fa fa-times"></i>
+							<div class="card__caption">
+								<h2 class="card__title">PTT制作</h2>
+								<p class="card__subtitle">企业发展强劲加持</p>
+							</div>
+							<div class="card__copy">
+								<p>我们凭借专业的策划队伍、专业的美工团队及专门的PPT技术人才，为您提供从PPT方案策划、内容设计到演示培训的一条龙服务。</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card__container card__container--closed">
+						<svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+							<defs>
+								<clipPath id="clipPath6">
+									<polygon class="clip" points="0,500 0,0 1920,0 1920,500"></polygon>
+								</clipPath>
+							</defs>
+							<image clip-path="url(#clipPath6)" width="1920" height="500" xlink:href="http://ofwgmeiuh.bkt.clouddn.com/f.jpg"></image>
+						</svg>
+						<div class="card__content">
+							<i class="card__btn-close fa fa-times"></i>
+							<div class="card__caption">
+								<h2 class="card__title">关于咖普</h2>
+								<p class="card__subtitle">更高、更快、更强</p>
+							</div>
+							<div class="card__copy">
+								<p>咖谱网络生长于互联网+时代，专注于互联网最优解决方案。业务模块包含企业网站建设，企业网站推广，项目方案架构UI设计，致力于为传统企业提供一揽子互联网服务。我们以用户需求为导向，寻求良好的使用体验，追逐最优解决方案，做最好的服务型企业。</p>							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /cards -->
+		</div><!-- /content -->
+		<!-- Related demos -->
+	</div>
+	<!-- /container -->
+	<!-- JS -->
+	<script src="js/vendors/trianglify.min.js"></script>
+	<script src="js/vendors/TweenMax.min.js"></script>
+	<script src="js/vendors/ScrollToPlugin.min.js"></script>
+	<script src="js/vendors/cash.min.js"></script>
+	<script src="js/Card-polygon.js"></script>
+	<script src="js/demo-3.js"></script>
+</body>
+
+</html>
