@@ -1,6 +1,7 @@
 const express = require('express')
 const path = require('path')
 const app = express()
+const compression = require('compression');
 const options = {
   dotfiles: 'ignore',  // 配置文件，如 .gitignore, .eslintrc
   etag: false,         // 和缓存验证有关
@@ -21,6 +22,9 @@ const options = {
 app.use(express.static('./dist', options))
 app.use(express.static('./dist/about', options))
 
+// 响应压缩
+app.use(compression())
+
 app.get('/', function(req, res) {
   res.sendFile(path.join(__dirname, './dist/index.html'))
 })
@@ -28,6 +32,12 @@ app.get('/', function(req, res) {
 app.get('/about', function(req, res) {
   res.sendFile(path.join(__dirname, './dist/about/index.html'))
 })
-app.listen(3002, function(){
-  console.log('运行啦');
+
+// app.praram('obk', function(req, res) {
+//   console.log("didididi, die");
+// })
+
+
+const server = app.listen(3002, function(){
+  console.log('运行在', server.address().port);
 })
